@@ -13,11 +13,8 @@
       color: white;
       padding: 60px 20px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
     .hero h1 { font-size: 42px; margin-bottom: 10px; letter-spacing: 2px; }
-
     .hero .subtitle {
       font-size: 18px;
       opacity: 0.8;
@@ -39,7 +36,6 @@
     }
     nav a:hover { background: #1a3a5c; }
 
-    /* bug: link de transportes completamente desformatado */
     nav a.broken-link {
       color: blue;
       background: white;
@@ -85,7 +81,6 @@
     .card-body h3 { font-size: 16px; color: #1a3a5c; margin-bottom: 6px; }
     .card-body p { font-size: 13px; color: #555; line-height: 1.5; }
 
-    /* bug: card com margem negativa e rotação */
     .card.glitched {
       margin-top: -30px;
       border: 4px dashed red;
@@ -122,7 +117,6 @@
     }
     .horarios-table tr:nth-child(even) td { background: #f9f9f9; }
 
-    /* bug: linha da tabela deslocada */
     .horarios-table tr.row-broken td {
       padding-left: 120px;
       font-size: 11px;
@@ -145,7 +139,6 @@
     }
     .rest-card strong { display: block; font-size: 15px; color: #1a3a5c; margin-bottom: 4px; }
 
-    /* bug: card com texto invisível (branco sobre branco) */
     .rest-card.invisible-bug { background: white; color: white; }
     .rest-card.invisible-bug strong { color: white; }
 
@@ -167,8 +160,6 @@
       font-size: 14px;
       width: 260px;
     }
-
-    /* bug: botão escondido atrás de outros elementos */
     .newsletter-form button {
       padding: 10px 20px;
       background: #e05c00;
@@ -190,22 +181,6 @@
       font-size: 13px;
       color: #2a5a2a;
       line-height: 1.6;
-    }
-
-    .broken-img {
-      width: 100%;
-      height: 90px;
-      background: #eee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-      font-size: 13px;
-      flex-direction: column;
-      gap: 4px;
-      border: 1px dashed #bbb;
-      margin-bottom: 16px;
-      border-radius: 6px;
     }
 
     .badge {
@@ -247,25 +222,25 @@
 
 <div class="container">
 
-  <h2 class="section-title">✨ Atrações Principais</h2>
+  <h2 class="section-title"> Atrações Principais</h2>
 
   <div class="cards">
     <div class="card">
-      <div class="card-img" style="background:#d9e8f5;">🏛️</div>
+      <div class="card-img" style="background:#d9e8f5;"></div>
       <div class="card-body">
         <h3>Livraria Lello</h3>
         <p>Uma das livrarias mais bonitas do mundo, inaugurada em 1906. Neogótica por fora, Art Nouveau por dentro. Bilhete tem desconto na compra de livros.</p>
       </div>
     </div>
     <div class="card glitched">
-      <div class="card-img" style="background:#fde8d8;">🍷</div>
+      <div class="card-img" style="background:#fde8d8;"></div>
       <div class="card-body">
         <h3>Caves do Vinho do Porto</h3>
         <p>Em Vila Nova de Gaia, do outro lado do Douro. Visitas e provas nas caves de Taylor's, Graham's, Sandeman e muitas outras.</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-img" style="background:#d8f0e0;">🌉</div>
+      <div class="card-img" style="background:#d8f0e0;"></div>
       <div class="card-body">
         <h3>Ponte Dom Luís I</h3>
         <p>Icónica ponte metálica sobre o Douro, inaugurada em 1886. O tabuleiro superior tem vistas deslumbrantes. Metro atravessa o nível de cima.</p>
@@ -275,21 +250,21 @@
 
   <div class="cards">
     <div class="card">
-      <div class="card-img" style="background:#f5e8d5;">⛪</div>
+      <div class="card-img" style="background:#f5e8d5;"></div>
       <div class="card-body">
         <h3>Sé do Porto</h3>
         <p>Catedral românica do século XII, no coração histórico. Não percas o claustro decorado com azulejos do século XVIII.</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-img" style="background:#e8d5f5;">🎨</div>
+      <div class="card-img" style="background:#e8d5f5;"></div>
       <div class="card-body">
         <h3>Estação de São Bento</h3>
         <p>Inaugurada em 1916, com 20.000 azulejos pintados por Jorge Colaço a retratar cenas históricas de Portugal. Entrada gratuita.</p>
       </div>
     </div>
     <div class="card">
-      <div class="card-img" style="background:#d5f5e8;">🌊</div>
+      <div class="card-img" style="background:#d5f5e8;"></div>
       <div class="card-body">
         <h3>Ribeira</h3>
         <p>Bairro histórico junto ao Douro, Património Mundial da UNESCO. Barcos rabelos, restaurantes e a melhor atmosfera da cidade.</p>
@@ -298,10 +273,10 @@
   </div>
 
   <div class="info-box">
-    💡 <strong>Dica:</strong> O <em>Porto Card</em> oferece transportes públicos ilimitados e entrada gratuita ou com desconto em muitos museus e atrações. Disponível por 1, 2, 3 ou 4 dias.
+     <strong>Dica:</strong> O <em>Porto Card</em> oferece transportes públicos ilimitados e entrada gratuita ou com desconto em muitos museus e atrações. Disponível por 1, 2, 3 ou 4 dias.
   </div>
 
-  <h2 class="section-title">🕐 Horários Úteis <span class="badge">Atualizado</span></h2>
+  <h2 class="section-title"> Horários Úteis <span class="badge">Atualizado</span></h2>
 
   <table class="horarios-table">
     <thead>
@@ -346,33 +321,33 @@
     </tbody>
   </table>
 
-  <h2 class="section-title">🍽️ Onde Comer</h2>
+  <h2 class="section-title"> Onde Comer</h2>
 
   <div class="restaurantes">
     <div class="rest-card">
-      <strong>🥩 Francesinha</strong>
+      <strong> Francesinha</strong>
       O prato icónico do Porto: camadas de pão, carnes e linguiça, coberto com queijo derretido e molho de tomate/cerveja. Experimenta no Café Santiago ou no Bufete Fase.
     </div>
     <div class="rest-card invisible-bug">
-      <strong>🐟 Bacalhau à Gomes de Sá</strong>
+      <strong> Bacalhau à Gomes de Sá</strong>
       Receita portuense clássica, criada no século XIX por José Luís Gomes de Sá. Bacalhau desfiado com batata, ovo cozido e azeitona. Uma obrigação.
     </div>
     <div class="rest-card">
-      <strong>🥐 Pastel de Nata</strong>
+      <strong> Pastel de Nata</strong>
       Não é invenção do Porto, mas encontras dos melhores na Confeitaria do Bolhão e na Padaria Ribeiro. Come quente com canela.
     </div>
     <div class="rest-card">
-      <strong>🍊 Tripas à Moda do Porto</strong>
+      <strong> Tripas à Moda do Porto</strong>
       Deu aos portuenses o apelido de "tripeiros". Guisado de tripas, feijão branco, linguiça e frango. Prato histórico ligado ao cerco de Lisboa em 1415.
     </div>
   </div>
 
   <div class="tip-box">
-    ⚠️ <strong>Atenção:</strong> O Mercado do Bolhão, renovado e reaberto em 2022, é ótimo para comprar produtos locais, enchidos, queijos e flores. Fica na Rua Formosa.
+     <strong>Atenção:</strong> O Mercado do Bolhão, renovado e reaberto em 2022, é ótimo para comprar produtos locais, enchidos, queijos e flores. Fica na Rua Formosa.
   </div>
 
   <div class="newsletter">
-    <h3>📬 Recebe dicas do Porto</h3>
+    <h3> Recebe dicas do Porto</h3>
     <p>Subscreve a nossa newsletter e recebe sugestões semanais sobre a cidade.</p>
     <div class="newsletter-form">
       <input type="email" placeholder="o-teu-email@exemplo.com" />
@@ -381,7 +356,7 @@
     <p style="font-size:11px; margin-top:12px; opacity:0.5;">(O botão pode não funcionar. Estamos a resolver o problema.)</p>
   </div>
 
-  <h2 class="section-title">🚌 Como Andar no Porto</h2>
+  <h2 class="section-title"> Como Andar no Porto</h2>
   <p style="font-size:14px; color:#444; line-height:1.8; margin-bottom:40px;">
     O Porto tem uma rede de transportes da <strong>STCP</strong> (autocarros) e do <strong>Metro do Porto</strong> com 6 linhas. Os elétricos históricos (linhas 1, 18 e 22) são uma atração em si mesmos. A linha de metro <strong>E (Violeta)</strong> liga o Aeroporto ao centro em cerca de 30 minutos.<br><br>
     Podes comprar o cartão <em>Andante</em> em qualquer estação de metro e carregar com créditos ou passes. O passe mensal para a zona central custa cerca de €40.
@@ -391,7 +366,7 @@
 
 <footer>
   <p>© 2024 Guia Turístico do Porto &nbsp;|&nbsp; Todos os direitos reservados &nbsp;|&nbsp; <a href="#">Política de Privacidade</a></p>
-  <p style="margin-top:6px;">Feito com ❤️ no Porto &nbsp;·&nbsp; Versão 1.0.0-beta (em desenvolvimento)</p>
+  <p style="margin-top:6px;">Feito com  no Porto &nbsp;·&nbsp; Versão 1.0.0-beta (em desenvolvimento)</p>
   <p style="margin-top:4px; font-size:10px; color:#666;">Última atualização: 32 de Fevereiro de 2024</p>
 </footer>
 
