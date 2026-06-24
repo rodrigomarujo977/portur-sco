@@ -1,1 +1,38 @@
+:root {
+  --cor-fundo: #f0f0f0;
+  --cor-texto: #333333;
+  --cor-destaque: #0066cc;
+}
 
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--cor-destaque);
+  color: white;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: var(--cor-destaque);
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--cor-destaque);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
