@@ -1,199 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guia do Porto</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
-
-    .hero { background: #1a3a5c; color: white; padding: 60px 20px; text-align: center; }
-    .hero h1 { font-size: 42px; margin-bottom: 10px; letter-spacing: 2px; }
-    .hero .subtitle { font-size: 18px; opacity: 0.8; margin-top: 10px; color: #aaccff; }
-
-    nav { background: #0f2540; display: flex; gap: 0; }
-    nav a { color: white; text-decoration: none; padding: 14px 20px; display: block; font-size: 14px; }
-    nav a:hover { background: #1a3a5c; }
-    nav a.broken-link { color: blue; background: white; text-decoration: underline; font-size: 22px; padding: 2px; }
-
-    .container { max-width: 960px; margin: 0 auto; padding: 20px; }
-
-    .section-title { font-size: 26px; font-weight: 700; color: #1a3a5c; margin: 40px 0 16px; border-bottom: 3px solid #e05c00; padding-bottom: 8px; }
-
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
-
-    .card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .card img { width: 100%; height: 160px; object-fit: cover; display: block; }
-    .card-body { padding: 14px; }
-    .card-body h3 { font-size: 16px; color: #1a3a5c; margin-bottom: 6px; }
-    .card-body p { font-size: 13px; color: #555; line-height: 1.5; }
-
-    .card.glitched { margin-top: -30px; border: 4px dashed red; transform: rotate(-1.5deg); }
-    .card.glitched .card-body h3 { color: red; font-size: 24px; }
-
-    .info-box { background: #fff8e7; border-left: 4px solid #e05c00; padding: 16px 20px; margin: 24px 0; border-radius: 0 4px 4px 0; font-size: 14px; color: #444; line-height: 1.7; }
-
-    .horarios-table { width: 100%; border-collapse: collapse; margin: 16px 0 32px; font-size: 14px; }
-    .horarios-table th { background: #1a3a5c; color: white; padding: 10px 14px; text-align: left; }
-    .horarios-table td { padding: 9px 14px; border-bottom: 1px solid #eee; }
-    .horarios-table tr:nth-child(even) td { background: #f9f9f9; }
-    .horarios-table tr.row-broken td { padding-left: 120px; font-size: 11px; color: red; }
-
-    .restaurantes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 32px; }
-    .rest-card { background: #f4f4f4; border-radius: 8px; padding: 14px 16px; font-size: 13px; color: #333; line-height: 1.6; }
-    .rest-card strong { display: block; font-size: 15px; color: #1a3a5c; margin-bottom: 4px; }
-    .rest-card.invisible-bug { background: white; color: white; }
-    .rest-card.invisible-bug strong { color: white; }
-
-    .newsletter { background: #1a3a5c; color: white; padding: 32px 20px; border-radius: 12px; margin: 32px 0; text-align: center; }
-    .newsletter h3 { font-size: 20px; margin-bottom: 10px; }
-    .newsletter p { font-size: 13px; opacity: 0.8; margin-bottom: 16px; }
-    .newsletter-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-    .newsletter-form input { padding: 10px 16px; border-radius: 6px; border: none; font-size: 14px; width: 260px; }
-    .newsletter-form button { padding: 10px 20px; background: #e05c00; color: white; border: none; border-radius: 6px; font-size: 14px; cursor: pointer; position: relative; z-index: -5; }
-
-    .tip-box { background: #e8f4e8; border: 1px solid #a8d5a8; border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 13px; color: #2a5a2a; line-height: 1.6; }
-    .badge { display: inline-block; background: #e05c00; color: white; font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-left: 6px; vertical-align: middle; }
-
-    footer { background: #0f2540; color: #aaa; text-align: center; padding: 24px; font-size: 12px; margin-top: 40px; }
-    footer a { color: #5599cc; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="hero">
-  <h1>🇵🇹 Guia do Porto</h1>
-  <div class="subtitle">A cidade Invicta espera por ti!</div>
-</div>
+  <header>
+    <h1>Bem-vindo ao meu site</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="#">Início</a>
-  <a href="#">Atrações</a>
-  <a href="#">Gastronomia</a>
-  <a class="broken-link" href="#">TRANSPORTES!!</a>
-  <a href="#">Contacto</a>
-</nav>
+  <main>
+    <h2>Título da secção</h2>
+    <p>Este é um parágrafo de exemplo.</p>
+    <button id="btn-cor">Mudar cor do fundo</button>
+  </main>
 
-<div class="container">
-
-  <h2 class="section-title"> Atrações Principais</h2>
-
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1524519209510-7e3b7c9eb710?w=600&q=80" alt="Livraria Lello" />
-      <div class="card-body">
-        <h3>Livraria Lello</h3>
-        <p>Uma das livrarias mais bonitas do mundo, inaugurada em 1906. Neogótica por fora, Art Nouveau por dentro. Bilhete tem desconto na compra de livros.</p>
-      </div>
-    </div>
-    <div class="card glitched">
-      <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Caves do Vinho do Porto" />
-      <div class="card-body">
-        <h3>Caves do Vinho do Porto</h3>
-        <p>Em Vila Nova de Gaia, do outro lado do Douro. Visitas e provas nas caves de Taylor's, Graham's, Sandeman e muitas outras.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&q=80" alt="Ponte Dom Luís I" />
-      <div class="card-body">
-        <h3>Ponte Dom Luís I</h3>
-        <p>Icónica ponte metálica sobre o Douro, inaugurada em 1886. O tabuleiro superior tem vistas deslumbrantes. Metro atravessa o nível de cima.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="cards">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=600&q=80" alt="Sé do Porto" />
-      <div class="card-body">
-        <h3>Sé do Porto</h3>
-        <p>Catedral românica do século XII, no coração histórico. Não percas o claustro decorado com azulejos do século XVIII.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1590517862374-7e981bf4d8d4?w=600&q=80" alt="Estação de São Bento" />
-      <div class="card-body">
-        <h3>Estação de São Bento</h3>
-        <p>Inaugurada em 1916, com 20.000 azulejos pintados por Jorge Colaço a retratar cenas históricas de Portugal. Entrada gratuita.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1564569566-88a6ea6b4c84?w=600&q=80" alt="Ribeira" />
-      <div class="card-body">
-        <h3>Ribeira</h3>
-        <p>Bairro histórico junto ao Douro, Património Mundial da UNESCO. Barcos rabelos, restaurantes e a melhor atmosfera da cidade.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="info-box">
-     <strong>Dica:</strong> O <em>Porto Card</em> oferece transportes públicos ilimitados e entrada gratuita ou com desconto em muitos museus e atrações. Disponível por 1, 2, 3 ou 4 dias.
-  </div>
-
-  <h2 class="section-title"> Horários Úteis <span class="badge">Atualizado</span></h2>
-
-  <table class="horarios-table">
-    <thead>
-      <tr><th>Local</th><th>Horário</th><th>Preço</th><th>Notas</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Livraria Lello</td><td>10h–19h30 (diário)</td><td>€8 (desconto na compra)</td><td>Fila pode ser longa, vai cedo</td></tr>
-      <tr><td>Torre dos Clérigos</td><td>9h–19h (diário)</td><td>€6 adultos</td><td>225 degraus, vista panorâmica</td></tr>
-      <tr class="row-broken"><td>Palácio da Bolsa</td><td>9h–18h30</td><td>€10 / €7 reduzido</td><td>Visita guiada obrigatória à Sala Árabe</td></tr>
-      <tr><td>Museu Serralves</td><td>10h–18h (Seg fechado)</td><td>€12 adultos</td><td>Arte contemporânea + parque incrível</td></tr>
-      <tr><td>Sé do Porto</td><td>9h–18h30</td><td>Gratuito (claustro pago)</td><td>Claustro: €3</td></tr>
-    </tbody>
-  </table>
-
-  <h2 class="section-title"> Onde Comer</h2>
-
-  <div class="restaurantes">
-    <div class="rest-card">
-      <strong> Francesinha</strong>
-      O prato icónico do Porto: camadas de pão, carnes e linguiça, coberto com queijo derretido e molho de tomate/cerveja. Experimenta no Café Santiago ou no Bufete Fase.
-    </div>
-    <div class="rest-card invisible-bug">
-      <strong> Bacalhau à Gomes de Sá</strong>
-      Receita portuense clássica, criada no século XIX por José Luís Gomes de Sá. Bacalhau desfiado com batata, ovo cozido e azeitona. Uma obrigação.
-    </div>
-    <div class="rest-card">
-      <strong> Pastel de Nata</strong>
-      Não é invenção do Porto, mas encontras dos melhores na Confeitaria do Bolhão e na Padaria Ribeiro. Come quente com canela.
-    </div>
-    <div class="rest-card">
-      <strong> Tripas à Moda do Porto</strong>
-      Deu aos portuenses o apelido de "tripeiros". Guisado de tripas, feijão branco, linguiça e frango. Prato histórico ligado ao cerco de Lisboa em 1415.
-    </div>
-  </div>
-
-  <div class="tip-box">
-     <strong>Atenção:</strong> O Mercado do Bolhão, renovado e reaberto em 2022, é ótimo para comprar produtos locais, enchidos, queijos e flores. Fica na Rua Formosa.
-  </div>
-
-  <div class="newsletter">
-    <h3> Recebe dicas do Porto</h3>
-    <p>Subscreve a nossa newsletter e recebe sugestões semanais sobre a cidade.</p>
-    <div class="newsletter-form">
-      <input type="email" placeholder="o-teu-email@exemplo.com" />
-      <button type="button">Subscrever</button>
-    </div>
-    <p style="font-size:11px; margin-top:12px; opacity:0.5;">(O botão pode não funcionar. Estamos a resolver o problema.)</p>
-  </div>
-
-  <h2 class="section-title"> Como Andar no Porto</h2>
-  <p style="font-size:14px; color:#444; line-height:1.8; margin-bottom:40px;">
-    O Porto tem uma rede de transportes da <strong>STCP</strong> (autocarros) e do <strong>Metro do Porto</strong> com 6 linhas. Os elétricos históricos (linhas 1, 18 e 22) são uma atração em si mesmos. A linha de metro <strong>E (Violeta)</strong> liga o Aeroporto ao centro em cerca de 30 minutos.<br><br>
-    Podes comprar o cartão <em>Andante</em> em qualquer estação de metro e carregar com créditos ou passes. O passe mensal para a zona central custa cerca de €40.
-  </p>
-
-</div>
-
-<footer>
-  <p>© 2024 Guia Turístico do Porto &nbsp;|&nbsp; Todos os direitos reservados &nbsp;|&nbsp; <a href="#">Política de Privacidade</a></p>
-  <p style="margin-top:6px;">Feito com  no Porto &nbsp;·&nbsp; Versão 1.0.0-beta (em desenvolvimento)</p>
-  <p style="margin-top:4px; font-size:10px; color:#666;">Última atualização: 32 de Fevereiro de 2024</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
